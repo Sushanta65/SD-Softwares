@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { UserContext } from '../../../App';
-import Footer from '../../../Shared/Footer/Footer';
-import Navbar from '../../../Shared/Navbar/Navbar';
+import Footer from '../../../SharedComponents/Footer/Footer';
+import Navbar from '../../../SharedComponents/Navbar/Navbar';
 import AdminSiteBar from '../AdminSiteBar/AdminSiteBar';
 import OrderServiceInfo from '../OrderedServiceInfo/OrderServiceInfo';
 import './MyOrder.css'

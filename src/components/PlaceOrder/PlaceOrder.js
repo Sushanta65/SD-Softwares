@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { UserContext } from '../../App';
-import Footer from '../../Shared/Footer/Footer';
-import Navbar from '../../Shared/Navbar/Navbar';
+import Footer from '../../SharedComponents/Footer/Footer';
+import Navbar from '../../SharedComponents/Navbar/Navbar';
 import AdminSiteBar from '../Dashboard/AdminSiteBar/AdminSiteBar';
 
 

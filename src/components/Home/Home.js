@@ -3,7 +3,7 @@ import Header from './Header/Header';
 import Services from './Services/Services';
 import BestServices from './BestServices/BestServices';
 import Testimonials from './Testimonials/Testimonials';
-import Footer from '../../Shared/Footer/Footer';
+import Footer from '../../SharedComponents/Footer/Footer';
 
 const Home = () => {
     return (

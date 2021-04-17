@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import Footer from '../../../Shared/Footer/Footer';
-import Navbar from '../../../Shared/Navbar/Navbar';
+import Footer from '../../../SharedComponents/Footer/Footer';
+import Navbar from '../../../SharedComponents/Navbar/Navbar';
 import AdminSiteBar from '../AdminSiteBar/AdminSiteBar';
 
 const AddServices = () => {

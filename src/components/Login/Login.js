@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import Navbar from '../../Shared/Navbar/Navbar';
+import Navbar from '../../SharedComponents/Navbar/Navbar';
 import './Login.css';
 import firebase from "firebase/app";
 import "firebase/auth";
