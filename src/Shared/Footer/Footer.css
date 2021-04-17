@@ -1,0 +1,14 @@
+.footer-section{
+    background: #000;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+Link{
+    color: white;
+}
+.sub-footer p{
+    margin: 0;
+    padding: 10px;
+}

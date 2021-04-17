@@ -1,0 +1,7 @@
+.clients{
+    width: 50px;
+    border-radius: 25px;
+}
+.p-3.testimonial-card {
+    box-shadow: 0px 3px 8px 2px lightgrey;
+}

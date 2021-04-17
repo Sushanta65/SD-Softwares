@@ -1,0 +1,10 @@
+.siteBar{
+    min-height: 600px;
+    background: #F8F9FA;
+}
+.siteBar img{
+    width: 20px;
+}
+li .nav-link{
+    color: black;
+}

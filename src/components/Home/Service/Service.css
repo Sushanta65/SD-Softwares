@@ -1,0 +1,11 @@
+img.card-img{
+    position: relative;
+}
+img.card-img:after{
+    position: absolute;
+    content: '';
+    background-color: red;
+    width: 100%;
+    top: 0;
+    right: 0;
+}

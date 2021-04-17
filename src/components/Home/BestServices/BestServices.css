@@ -1,0 +1,40 @@
+.discover-people {
+    background: linear-gradient(90deg, #f4f9ff, #cecece7a);
+}
+.discover-people h3 {
+    font-family: inherit;
+}
+a.btn.btn-lg.d-block.top-rated:hover {
+    background: #a51e62;
+}
+a.btn.btn-lg.d-block.top-rated {
+    background: #C71670;
+    color: white;
+    font-weight: 600;
+    padding: 14px 0;
+    transition: .7s;
+}
+.container.serviecs.px-3.mt-5 {
+    margin-bottom: 80px;
+}
+a.btn.btn-lg.d-block.trending:hover {
+    background: #5b13a5;
+}
+a.btn.btn-lg.d-block.trending {
+    background: #6D16C7;
+    color: white;
+    font-weight: 600;
+    padding: 14px 0;
+    transition: .7s;
+}
+a.btn.btn-lg.d-block.noteworthy:hover {
+    background: #0f0588;
+}
+
+a.btn.btn-lg.d-block.noteworthy {
+    background: #2618C6;
+    color: white;
+    font-weight: 600;
+    padding: 14px 0;
+    transition: .7s;
+}
