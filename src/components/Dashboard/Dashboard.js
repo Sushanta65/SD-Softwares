@@ -11,7 +11,6 @@ const Dashboard = () => {
             <AdminSiteBar></AdminSiteBar>
             <div className="col-md-10 bg-light">
                 <h4 className="p-4 border-bottom">Dashboard</h4>  
-                <p className="pl-4"></p>                  
                     <div className="row pt-3">
                     <div className="col myOrders">
                         <div className="addServiceForm h-100 border p-3">

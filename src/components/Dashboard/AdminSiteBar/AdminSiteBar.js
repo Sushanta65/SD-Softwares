@@ -8,7 +8,7 @@ const AdminSiteBar = () => {
     const [logedInUser] = useContext(UserContext)
     const [isAdmin, setIsAdmin] = useState(false)
     useEffect(() => {
-        fetch('http://localhost:8080/isAdmin', {
+        fetch('https://young-falls-75593.herokuapp.com/isAdmin', {
             method: 'POST',
             headers: {'content-type':'application/json'},
             body: JSON.stringify({email: logedInUser.email})

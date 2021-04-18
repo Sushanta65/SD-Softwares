@@ -9,7 +9,7 @@ const ServiceCheckOut = () => {
     const { id } = useParams()
     const [service, setService] = useState({})
     useEffect(() => {
-        fetch(`http://localhost:8080/services/${id}`)
+        fetch(`https://young-falls-75593.herokuapp.com/services/${id}`)
             .then(res => res.json())
             .then(data => setService(data[0]))
     }, [id])

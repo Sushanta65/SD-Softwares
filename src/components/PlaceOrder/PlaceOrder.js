@@ -12,7 +12,7 @@ const PlaceOrder = () => {
     const [overVIewService, setOverViewService] = useState({})
     const {serviceName, servicePrice, imgURL} = overVIewService
     useEffect(() => {
-        fetch(`http://localhost:8080/checkOut/services/${id}`)
+        fetch(`https://young-falls-75593.herokuapp.com/checkOut/services/${id}`)
             .then(res => res.json())
             .then(data => setOverViewService(data[0]))
     }, [id])
@@ -25,7 +25,7 @@ const PlaceOrder = () => {
         }
         const orderDitails = { ...logedInUser, service: serviceDitails, orderTime: new Date().toDateString('dd/MM/yyyy') }
 
-        fetch('http://localhost:8080/addOrder', {
+        fetch('https://young-falls-75593.herokuapp.com/addOrder', {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(orderDitails)

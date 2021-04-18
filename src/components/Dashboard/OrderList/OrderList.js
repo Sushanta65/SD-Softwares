@@ -8,7 +8,7 @@ const OrderList = () => {
     const [orderedIteam, setOrderedIteam] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:8080/ordersList')
+        fetch('https://young-falls-75593.herokuapp.com/ordersList')
         .then(res => res.json())
         .then(data => setOrderedIteam(data))
     }, [])

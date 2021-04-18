@@ -12,6 +12,7 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import ServiceCheckOut from './components/ServiceCheckOut/ServiceCheckOut';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import MyOrders from './components/Dashboard/MyOrders/MyOrders';
+import Error404 from './components/Error404/Error404';
 
 export const UserContext = createContext()
 
@@ -49,11 +50,14 @@ function App() {
         <PrivateRoute path="/services/:id">
           <ServiceCheckOut></ServiceCheckOut>
         </PrivateRoute>
+        <PrivateRoute path="/admin">
+          <Dashboard></Dashboard>
+        </PrivateRoute>
         <Route path="/checkOut/services/:id">
           <PlaceOrder></PlaceOrder>
         </Route>
         <Route path="*">
-          <h3>Page Not Found</h3>
+          <Error404></Error404>
         </Route>
       </Switch>
     </BrowserRouter>

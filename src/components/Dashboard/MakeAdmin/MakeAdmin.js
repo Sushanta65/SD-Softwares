@@ -25,7 +25,7 @@ const MakeAdmin = () => {
         formData.append('name', adminInfo.name)
         formData.append('email', adminInfo.email)
 
-        fetch('http://localhost:8080/addAdmin', {
+        fetch('https://young-falls-75593.herokuapp.com/addAdmin', {
             method: 'POST',
             body: formData
         })
