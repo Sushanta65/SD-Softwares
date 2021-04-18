@@ -42,6 +42,7 @@ if (!firebase.apps.length) {
                 setLogedInUser(newUserInfo)
                 history.replace(from);
                 console.log(user)
+                setUserToken()
             })
             .catch(err => {
                 console.log(err.message)
@@ -49,8 +50,16 @@ if (!firebase.apps.length) {
                 console.log(err.code)
                 console.log(err)
             })
+            
     }
 
+    const setUserToken = () => {
+        firebase.auth().currentUser.getIdToken(/* forceRefresh */ true).then(function(idToken) {
+            sessionStorage.setItem('token', idToken)
+          }).catch(function(error) {
+              console.log(error)
+          });
+    }
     return (
         <div>
             <Navbar></Navbar>
