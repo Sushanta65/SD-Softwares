@@ -4,7 +4,6 @@ import { UserContext } from '../../App';
 import Footer from '../../SharedComponents/Footer/Footer';
 import Navbar from '../../SharedComponents/Navbar/Navbar';
 import AdminSiteBar from '../Dashboard/AdminSiteBar/AdminSiteBar';
-import PaymentGetway from '../Dashboard/PaymentGetway/PaymentGetway';
 
 
 const PlaceOrder = () => {
@@ -69,7 +68,6 @@ const PlaceOrder = () => {
                                     </tbody>
                                 </table>
                                 <button className="btn btn-success" onClick={placeOrder}>Place Order</button>
-                                <PaymentGetway></PaymentGetway>
                             </div>
                         </div>
                     </div>

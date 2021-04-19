@@ -1,5 +1,6 @@
 img.card-img{
     position: relative;
+    transition: .4s;
 }
 img.card-img:after{
     position: absolute;
@@ -8,6 +9,12 @@ img.card-img:after{
     width: 100%;
     top: 0;
     right: 0;
+}
+.serviceCard:hover img.card-img {
+    transform: scale(1.1);
+}
+.serviceCard {
+    overflow: hidden;
 }
 .serviceCard{
     transition: .4s;

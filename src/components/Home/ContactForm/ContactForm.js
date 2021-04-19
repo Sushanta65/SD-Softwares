@@ -3,22 +3,17 @@ import './ContactForm.css'
 
 const ContactForm = () => {
     return (
-        <section className="contactForm py-5 border text-center">
-        <div className="container">
-            <div className="row">
-                <div className="col">
-                    <h3 className="text-capitalize">Contact With Us</h3>
-                    <p className="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis nemo iure, ullam consectetur veritatis ex in tempore dolor impedit explicabo.</p>
-                    <form className="form-inline justify-content-center" action="#" method="POST">
-                        <label className="sr-only" for="name">Email</label>
-                        <input className="form-control m-2" type="email" placeholder="Enter Email"/>
-                        <label className="sr-only" for="#">Message</label>
-                        <input className="form-control m-2" type="text" name="message" placeholder="Write Your Message"/>
-                        <input className="btn btn-primary m-2" type="submit" value="Subscribe"/>
-                    </form>
+        <section className="contactForm py-5 text-center">
+            <div className="w-50 m-auto">
+                <h2 style={{color: 'rgb(58, 66, 86)'}}><span className="text-success">Contact</span> With Us</h2>
+                <p>Let's Say to Us</p>
+                <div className="mt-5">
+                    <input className="form-control mb-4" type="text" placeholder="Name"/>
+                    <input className="form-control mb-4" type="text" placeholder="Email"/>
+                    <textarea className="form-control mb-4" cols="30" rows="4" placeholder="Message"></textarea>
+                    <button className="btn btn-success">Send Massege</button>
+                </div>
             </div>
-        </div>
-        </div>
         </section>
     );
 };

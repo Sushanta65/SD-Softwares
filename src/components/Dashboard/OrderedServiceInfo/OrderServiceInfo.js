@@ -11,13 +11,13 @@ const OrderServiceInfo = ({serviceInfo, index}) => {
                <h6>Email: {email}</h6>
                <h6>Ordered Date: {orderTime}</h6>
                <h5 className="pt-4 pb-3">{service.serviceName}</h5>
-               <h6>Cost: {service.price}</h6>
+               <h6>Cost: ${service.price}</h6>
                <div className="status d-flex justify-content-between border mt-3 p-2">
                     <div>
                         <h5 className="text-success">Status</h5>
                     </div>
                     <div>
-                        <h6 className="text-danger">Panding..</h6>
+                        <h6 className="text-info">Processing..</h6>
                     </div>
                </div>
            </div>

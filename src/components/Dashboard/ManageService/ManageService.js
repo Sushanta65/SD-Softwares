@@ -1,6 +1,7 @@
 import React from 'react';
 
 const ManageService = ({service, index}) => {
+
     const deleteService = (id) =>{
         fetch(`https://young-falls-75593.herokuapp.com/services/${id}`, {
             method: 'DELETE'
@@ -9,9 +10,10 @@ const ManageService = ({service, index}) => {
         .then(data => {
             alert('Service Deleted Successfully')
         })
+
     }
     return (
-        <tr>
+        <tr className="infos">
         <th scope="row">{index+1}</th>
             <td>
             <table class="table mt-4 table-hover">
@@ -28,7 +30,7 @@ const ManageService = ({service, index}) => {
                         <td>${service.servicePrice}</td>
                         <td>
                             <button className="btn btn-primary btn-sm mr-2">Update Service</button> 
-                            <button onClick={() => deleteService(service._id)} className="btn btn-danger btn-sm">Delete Service</button>
+                            <button onClick={() => deleteService(service._id)} className="btn btn-danger btn-sm delete">Delete Service</button>
                         </td>
                     </tr>
 

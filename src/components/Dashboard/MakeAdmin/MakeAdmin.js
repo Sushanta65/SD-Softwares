@@ -16,7 +16,6 @@ const MakeAdmin = () => {
        const newFile = event.target.files[0];
        setAdminFile(newFile)
     }
-    console.log(adminInfo.name)
 
     const AdminSubmit = () => {
 
@@ -46,15 +45,15 @@ const MakeAdmin = () => {
                     <h4 className="p-4 border-bottom">Make Admin</h4>                    
                         <div className="row pt-3">
                         <div className="col">
-                            <div className="addServiceForm border w-50 p-3">
+                            <div className=" border w-50 p-3">
                                 <form onSubmit={AdminSubmit}>
                                     <div className="form-group">
                                         <label for="#">Name</label>
-                                        <input onBlur={handleBlurInput} type="text" className="form-control" name="name" placeholder="Enter Name" />
+                                        <input onBlur={handleBlurInput} type="text" className="form-control" name="fullname" placeholder="Enter Name" required/>
                                     </div>
                                     <div className="form-group">
                                         <label for="#">Email</label>
-                                        <input onBlur={handleBlurInput} type="email" className="form-control" name="email"  placeholder="Enter Email" />
+                                        <input onBlur={handleBlurInput} type="email" className="form-control" name="email"  placeholder="Enter Email" required/>
                                     </div>
                                     <div className="form-upload mb-2">
                                         <input onChange={handleFileChange} type="file"  />

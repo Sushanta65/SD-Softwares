@@ -4,7 +4,6 @@ import { UserContext } from '../../App';
 
 const Navbar = () => {
     const [logedInUser] = useContext(UserContext)
-    console.log(logedInUser)
     return (
         <div>
             <nav className="navbar navbar-expand-md navbar-light bg-light py-3 border-bottom">
@@ -30,9 +29,9 @@ const Navbar = () => {
                             <Link className="nav-link" to="/admin">Admin</Link>
                         </li>
                         {!logedInUser.email? <li className="nav-item mr-2">
-                            <Link className="nav-link text-success" to="/login">Login</Link>
+                            <Link className="nav-link text-success" to="/login"><i class="fas fa-sign-in-alt"></i> Login</Link>
                         </li>: <li className="nav-item mr-2">
-                            <Link className="nav-link text-success" to="#">Logout</Link>
+                            <Link className="nav-link text-success" to="#"><i class="fas fa-sign-out-alt"></i> Logout</Link>
                         </li>}
                     </ul>
                     <div className="form-inline my-2 my-lg-0">
