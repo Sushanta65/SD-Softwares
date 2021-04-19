@@ -4,6 +4,7 @@ import { UserContext } from '../../App';
 
 const Navbar = () => {
     const [logedInUser] = useContext(UserContext)
+    console.log(logedInUser)
     return (
         <div>
             <nav className="navbar navbar-expand-md navbar-light bg-light py-3 border-bottom">
@@ -39,6 +40,9 @@ const Navbar = () => {
 
                             <button className="btn btn-success my-2 my-sm-0">Search</button>
                         
+                     </div>
+                     <div className="my-2 my-lg-0">
+                        <img style={{width: '40px', borderRadius: '25px', marginLeft: '10px'}} src={logedInUser.imgURL} alt=""/>
                      </div>
                     </div>
                     </div>

@@ -28,6 +28,13 @@ const MyOrders = () => {
                             <div className="addServiceForm h-100 border p-3">
                             <div className="serviceOverview">
                                 <div className="row">
+                                <div className="w-100 text-center">
+                                    {orders.length === 0 &&
+                                        <div class="spinner-border text-success" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                      </div>}
+                                      </div>
+                                    
                                 {
                                     orders.map((orderedServiceInfo, index) => <OrderServiceInfo index={index} serviceInfo={orderedServiceInfo}></OrderServiceInfo>)
                                 }

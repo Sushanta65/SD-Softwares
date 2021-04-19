@@ -24,6 +24,7 @@ const OrderList = () => {
                         <div className="col">
                             <div className="addServiceForm p-3">
                                 <table class="table border">
+                                
                                     <thead>
                                         <tr>
                                             <th scope="col">No</th>
@@ -32,6 +33,11 @@ const OrderList = () => {
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    <div className="w-100 text-center">
+                                            {orderedIteam.length === 0 && <div className="spinner-border text-success" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>}
+                                        </div>
                                         {
                                             orderedIteam.map((orderedService, index) => <OrderedItem index={index} orderedService={orderedService}></OrderedItem>)
                                         }

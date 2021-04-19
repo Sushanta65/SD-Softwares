@@ -13,6 +13,7 @@ import ServiceCheckOut from './components/ServiceCheckOut/ServiceCheckOut';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import MyOrders from './components/Dashboard/MyOrders/MyOrders';
 import Error404 from './components/Error404/Error404';
+import ManageServices from './components/Dashboard/ManageServices/ManageServices';
 
 export const UserContext = createContext()
 
@@ -34,6 +35,9 @@ function App() {
         </Route>
         <PrivateRoute path="/addServices">
           <AddServices></AddServices>
+        </PrivateRoute>
+        <PrivateRoute path="/manageServices">
+          <ManageServices></ManageServices>
         </PrivateRoute>
         <PrivateRoute path="/writeReview">
           <WriteReview></WriteReview>
